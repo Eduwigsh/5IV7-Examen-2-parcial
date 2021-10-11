@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="f1">
+    <!-- elige el tipo de AES-->
+        <input type="radio" name="tipo" value="16" id="AES128">
+        <label for="AES128">
+            AES de 128 (16 caracteres)
+        </label>
+        <input type="radio" name="tipo" value="24" id="AES192">
+        <label for="AES192">
+            AES de 192 (24 caracteres)
+        </label>
+        <input type="radio" name="tipo" value="32" id="AES256">
+        <label for="AES256">
+            AES de 256 (32 caracteres)
+        </label>
+        
+            <!-- elige la accion-->
+        <input type="button" value="cifrar" onclick="tipoencriptado()">
+        <input type="button" value="decifrar" onclick="tipodesencriptado()">
+    </form>
+    <script src="js/Aes.js"></script>
+
+</body>
+</html>
