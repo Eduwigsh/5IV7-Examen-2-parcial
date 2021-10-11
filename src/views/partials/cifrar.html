@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cifrar ＞﹏＜</title>
+    <link rel="stylesheet" href="../css/cifrar.css">
+    <script src="https://kit.fontawesome.com/b4150a26b3.js" crossorigin="anonymous"></script> 
 </head>
-<body>
-    
-  <form>
-    <h2>Selcecione el archivo a encriptar</h2>
-  <input type="file" id="archivo1" />
-  <h2>cual es la contraseña</h2>
-    <input type="text" id='contraseña' >
-    <input type="button" onclick="encriptar()" value="cifrar">
-</form>
-  <script src="js/Encriptar.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-</body>
+  <body>
+      <a href="javascript:history.go(-1)"><i class="fa fas far fa-caret-square-left"></i></a> <!--Pon la dirección del index en la etiqueta a xd-->
+      <div class="main-container">
+        <div class="whenFlexeas">
+            <form>
+              <h2>Selecciona el archivo a encriptar</h2>
+              <input type="file" id="archivo1" />
+              <h2>Ingresa la contraseña</h2>
+              <input type="text" id='contraseña' >
+              <input type="button" onclick="encriptar()" value="Cifrar" id="enviar">
+            </form>
+        </div>
+      </div>
+    <script src="js/Encriptar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  </body>
 </html>

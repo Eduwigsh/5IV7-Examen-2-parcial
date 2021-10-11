@@ -5,28 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/decifrar.css">
 </head>
 <body>
-    <form name="f1">
-    <!-- elige el tipo de AES-->
-        <input type="radio" name="tipo" value="16" id="AES128">
-        <label for="AES128">
-            AES de 128 (16 caracteres)
-        </label>
-        <input type="radio" name="tipo" value="24" id="AES192">
-        <label for="AES192">
-            AES de 192 (24 caracteres)
-        </label>
-        <input type="radio" name="tipo" value="32" id="AES256">
-        <label for="AES256">
-            AES de 256 (32 caracteres)
-        </label>
-        
-            <!-- elige la accion-->
-        <input type="button" value="cifrar" onclick="tipoencriptado()">
-        <input type="button" value="decifrar" onclick="tipodesencriptado()">
-    </form>
+    <div class="main-container">
+        <div class="whenFlexeas">
+            <h2>Elige el tipo de cifrado AES que vas a usar</h2>
+            <form name="f1" id="f1">
+            <!-- elige el tipo de AES-->
+                <center>
+                <input type="radio" name="tipo" value="16" id="AES128">
+                <label for="AES128">
+                    AES de 128 (16 caracteres)
+                </label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="tipo" value="24" id="AES192">
+                <label for="AES192">
+                    AES de 192 (24 caracteres)
+                </label>
+                <br>
+                <br>
+                <br>
+                <input type="radio" name="tipo" value="32" id="AES256">
+                <label for="AES256">
+                    AES de 256 (32 caracteres)
+                </label>
+                <br>
+                <br>
+                <br>
+                    <!-- elige la accion-->
+                <input type="button" value="cifrar" onclick="tipoencriptado()" class="viajar">
+                <input type="button" value="decifrar" onclick="tipodesencriptado()" class="viajar">
+                </center>
+            </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center>
+        <h2>Integrantes del equipo:</h2>
+        <p>Solís Alvarado Eduwigsh Fernando</p>
+        <br>
+        <p>Gómez Ocampo Hugo</p>
+        </center>
+    </footer>
     <script src="js/Aes.js"></script>
-
 </body>
 </html>
