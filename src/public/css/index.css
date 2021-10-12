@@ -40,3 +40,13 @@ input{
 .viajar{
     margin-inline: 30px;
 }
+h2{
+    margin-bottom: 17px;
+}
+footer{
+    margin-top: 13%;
+    color: rgb(250,250,250);
+    background: rgb(24,24,24);
+    background: linear-gradient(180deg, rgba(24,24,24,1) 0%, rgba(21,21,21,1) 50%, rgba(24,24,24,1) 100%);
+    padding-block: 35px;
+}
