@@ -28,7 +28,7 @@ function leerArchivo(e) {
             blob = new Blob([cifrado.toString(CryptoJS.enc.Utf8)], {type: "octet/stream"}),
             url = window.URL.createObjectURL(blob);
         a.href = url;
-        a.download = 'mensaje.txt';
+        a.download = 'mensajeDecifrado.txt';
         a.click();
         window.URL.revokeObjectURL(url);
     } 
